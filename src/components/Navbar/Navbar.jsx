@@ -17,6 +17,7 @@ const Container = styled.div`
     background: rgba(255, 255, 255, 0.9);
     box-shadow: 0px 4px 8px rgba(20, 20, 20, 0.1);
     padding: 1rem 2rem;
+    z-index: 99;
 `;
 
 const Logo = styled.img`
