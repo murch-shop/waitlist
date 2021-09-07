@@ -15,7 +15,7 @@ function App() {
             Start your merchandise journey<br />
             <span className="fredoka-one title__yellow">with murch</span>.
           </h1>
-          <img src={star} className="header__star-right" />
+          <img src={star} alt="murch star" className="header__star-right" />
         </div>
         <p className="header__caption">We’ll hop you right onboard once ready, referring to your fellow creators will bump you further up the list!</p>
       </div>
