@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 import logo from "./assets/logo.png";
@@ -18,11 +18,20 @@ const Container = styled.div`
     box-shadow: 0px 4px 8px rgba(20, 20, 20, 0.1);
     padding: 1rem 2rem;
     z-index: 99;
+
+    @media screen and (max-width: 400px) {
+        padding: 1rem;
+    }
 `;
 
 const Logo = styled.img`
     max-height: 42px;
     width: auto;
+
+    @media screen and (max-width: 321px) {
+        max-height: 36px;
+        width: auto;
+    }
 `;
 
 const Button = styled.button`
@@ -48,15 +57,19 @@ const Button = styled.button`
 
 const Arrow = styled.img`
     padding-left: 10px;
+
+    @media screen and (max-width: 321px) {
+        display: none;
+    }
 `;
 
 const Navbar = () => (
     <Container>
-        <Logo src={logo} />
+        <Logo src={logo} alt="murch logo" />
         {/* <Link to="#"> */}
             <Button>
                 Back to home
-                <Arrow src={arrow} />
+                <Arrow src={arrow} alt="back arrow" />
             </Button>
         {/* </Link> */}
     </Container>
