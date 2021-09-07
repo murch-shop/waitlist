@@ -28,7 +28,9 @@ function App() {
               <h1 className="fredoka-one content__title">Join the waitlist</h1>
               <p className="open-sans content__body">Get exclusive access to...</p>
             </div>
-            <Waitlist api_key="EAYIW2" waitlist_link="https://waitlist.murch.shop/" />
+            <div className="waitlist__widget">
+              <Waitlist api_key="EAYIW2" waitlist_link="https://waitlist.murch.shop/" />
+            </div>
           </div>
           <img src={sticker} className="waitlist__image-right" />
         </div>
