@@ -68,7 +68,7 @@ const Navbar = () => (
         <Logo src={logo} alt="murch logo" />
         {/* <Link to="#"> */}
             <Button>
-                Back to home
+                Join the Waitlist
                 <Arrow src={arrow} alt="back arrow" />
             </Button>
         {/* </Link> */}
