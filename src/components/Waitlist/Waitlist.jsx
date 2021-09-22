@@ -30,7 +30,7 @@ import sticker from "./assets/waitlist.png"
 import icon from "./assets/waitlist_star.png";
 
 const Waitlist = () => (
-    <Section>
+    <Section id="waitlist">
         <Header>
             <HeaderTitle>
                 <Star src={star} alt="Murch Star" className="left" />
@@ -49,8 +49,8 @@ const Waitlist = () => (
                 <Card>
                     <Content>
                         <Icon src={icon} alt="Star" />
-                        <ContentTitle>Join the Waitlist</ContentTitle>
-                        <Body>Get exclusive access to...</Body>
+                        <ContentTitle className="fredoka-one">Join the Waitlist</ContentTitle>
+                        <Body className="open-sans">Get exclusive access to...</Body>
                     </Content>
                     <Widget>
                         <WaitlistApi api_key="EAYIW2" waitlist_link="https://waitlist.murch.shop/" />

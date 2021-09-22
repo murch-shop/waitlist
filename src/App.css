@@ -8,6 +8,10 @@
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   /* COLORS */
   --yellow-main: #FFC700;
@@ -26,6 +30,10 @@
   --indicator-yellow: #FFCD1A;
   --indicator-green: #3CD278;
 
+  /* TYPOGRAPHY */
+  --fredoka-one: "Fredoka One", sans-serif;
+  --open-sans: "Open Sans", sans-serif;
+
   /* SHAPES (BORDER RADIUS) */
   --hard-border: 0px;
   --soft-border: 10px;
@@ -42,8 +50,8 @@ a {
   text-decoration: none;
 }
 
-.fredoka-one { font-family: 'Fredoka One', sans-serif; color: var(--muted-dark); }
-.open-sans { font-family: 'Open Sans', sans-serif; color: var(--muted-dark); }
+.fredoka-one { font-family: var(--fredoka-one); color: var(--muted-dark); }
+.open-sans { font-family: var(--open-sans); color: var(--muted-dark); }
 .regular { font-weight: 400; }
 .medium { font-weight: 600; }
 .bold { font-weight: 700; }
