@@ -8,7 +8,8 @@
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-html {
+html, body, main {
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 

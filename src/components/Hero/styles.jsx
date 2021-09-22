@@ -15,10 +15,17 @@ export const Container = styled.section`
     background-position: bottom;
 
     @media only screen and (max-width: 1024px) {
+        height: 75vh;
+        background-size: contain;
         padding: 4rem 2rem;
     }
 
+    @media only screen and (max-width: 768px) {
+        padding: 8rem 2rem;
+    }
+
     @media only screen and (max-width: 640px) {
+        align-items: center;
         padding: 2rem 1rem;
     }
 `;
