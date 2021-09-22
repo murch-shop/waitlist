@@ -49,6 +49,7 @@ const Wrapper = styled.div`
 `;
 
 export const Copyright = styled.p`
+    text-align: center;
     padding-top: 0.5rem;
 
     // @media screen and (max-width: 400px) {
