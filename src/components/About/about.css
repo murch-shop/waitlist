@@ -1,0 +1,27 @@
+.logistics__bg {
+    position: absolute;
+    left: 0;
+    bottom: -12rem;
+}
+
+.brand__bg {
+    position: absolute;
+    right: 0;
+    bottom: -12rem;
+}
+
+@media only screen and (max-width: 1280px) {
+    .logistics__bg {
+        left: -4rem;
+    }
+    
+    .brand__bg {
+        right: -4rem;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .logistics__bg, .brand__bg {
+        display: none;
+    }
+}

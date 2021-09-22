@@ -8,6 +8,11 @@
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+html, body, main {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
 :root {
   /* COLORS */
   --yellow-main: #FFC700;
@@ -26,6 +31,10 @@
   --indicator-yellow: #FFCD1A;
   --indicator-green: #3CD278;
 
+  /* TYPOGRAPHY */
+  --fredoka-one: "Fredoka One", sans-serif;
+  --open-sans: "Open Sans", sans-serif;
+
   /* SHAPES (BORDER RADIUS) */
   --hard-border: 0px;
   --soft-border: 10px;
@@ -42,8 +51,8 @@ a {
   text-decoration: none;
 }
 
-.fredoka-one { font-family: 'Fredoka One', sans-serif; color: var(--muted-dark); }
-.open-sans { font-family: 'Open Sans', sans-serif; color: var(--muted-dark); }
+.fredoka-one { font-family: var(--fredoka-one); color: var(--muted-dark); }
+.open-sans { font-family: var(--open-sans); color: var(--muted-dark); }
 .regular { font-weight: 400; }
 .medium { font-weight: 600; }
 .bold { font-weight: 700; }
@@ -110,204 +119,4 @@ p, .body {
   line-height: 1rem;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-}
-
-/* INDEX CSS */
-.container {
-  width: 100%;
-  height: auto;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  align-content: center;
-
-  background: #FFFFFF;
-  padding-top: 4rem;
-}
-
-.header {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-
-  width: 568px; /* approx. 40% of 100vw for 1440 display  */
-}
-
-.header__title {
-  position: relative;
-  padding: 1.5rem;
-}
-
-
-.title {
-  text-align: center;
-  line-height: 3rem;
-}
-
-.title__yellow {
-  color: var(--yellow-main);
-  text-align: center;
-}
-
-/* Include p or .body to html className */
-.header__caption {
-  color: var(--muted-light);
-  text-align: center;
-}
-
-.header__star-left {
-  position: absolute;
-  top: -1rem;
-  left: -4rem;
-}
-
-.header__star-right {
-  position: absolute;
-  bottom: 0rem;
-  right: -6rem;
-}
-
-.waitlist__container {  
-  width: 100%;
-  min-height: 420px;
-  height: auto;
-  padding: 80px;
-
-  background: url("./assets/background.png") no-repeat;
-  background-size: cover;
-  background-position: top left;
-}
-
-.waitlist__wrapper {
-  position: relative;
-  padding: 2.5rem 4rem;
-}
-
-.waitlist__card {
-  min-width: 800px;
-  width: auto;
-  height: auto;
-  background: var(--muted-dark);
-  border-radius: 20px;
-  padding: 2.5rem 4rem;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-  position: relative;
-}
-
-.waitlist__image-left {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 50;
-  transform: rotate(-8deg);
-}
-
-.waitlist__image-right {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: 50;
-  transform: rotate(172deg);
-}
-
-.waitlist__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  align-content: center;
-}
-
-.content__title { padding: 0.75rem 0 0.5rem 0; }
-
-.content__title, .content__body {
-  color: var(--muted-white);
-}
-
-.waitlist__widget {
-  padding: 4rem 2rem;
-  border-radius: 10%;
-  background: #FFF;
-}
-
-@media screen and (max-width: 800px) {
-  .header {
-    width: 75%;
-  }
-
-  .header__title {
-    padding: 0.75rem;
-  }
-
-  .waitlist__container {
-    padding: 1rem;
-    background-size: cover;
-    background-position: center;
-  }
-
-  .waitlist__wrapper {
-    width: 100%;
-    position: relative;
-    padding: 2rem;
-  }
-
-  .waitlist__card {
-    min-width: 92.5%;
-    width: auto;
-    max-width: 97.5%;
-    flex-direction: column;
-    padding: 2rem;
-  }
-
-  .waitlist__content {
-    width: 100%;
-    padding-bottom: 2rem;
-  }
-
-  .waitlist__image-left, .waitlist__image-right {
-    display: none;
-  }
-
-  .waitlist__widget {
-    border-radius: 5%;
-  }
-
-  .waitlist__widget {
-    width: 100%;
-    padding: 4rem 2rem;
-    border-radius: 10%;
-    background: #FFF;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .header__star-left {
-    position: absolute;
-    top: -1rem;
-    left: -2rem;
-  }
-  
-  .header__star-right {
-    position: absolute;
-    bottom: 0rem;
-    right: -3rem;
-  }
-
-  .waitlist__wrapper {
-    padding: 2rem 1rem;
-  }
-
-  .waitlist__widget {
-    padding: 2rem 0;
-    border-radius: 5%;
-  }
 }
