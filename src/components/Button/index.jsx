@@ -15,7 +15,7 @@ const StyledButton = styled.button`
     border: none;
     outline: none;
     cursor: pointer;
-    transition: box-shadow 0.3s ease;
+    transition: all 0.3s ease-in-out;
 
     :hover {
         box-shadow: 0px 5px 20px rgba(20, 20, 20, 0.15);

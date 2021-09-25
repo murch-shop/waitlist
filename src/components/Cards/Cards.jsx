@@ -9,6 +9,7 @@ import {
     Span,
     Wrapper,
     StyledCard,
+    ImageWrap,
     Image,
     Header,
     Body,
@@ -45,7 +46,9 @@ const data = [
 
 const Card = ({ image, title, body }) => (
     <StyledCard>
-        <Image src={image} alt={title} />
+        <ImageWrap>
+            <Image src={image} alt={title} />
+        </ImageWrap>
         <Header>{title}</Header>
         <Body>{body}</Body>
     </StyledCard>

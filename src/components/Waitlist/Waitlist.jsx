@@ -24,7 +24,7 @@ import {
 } from "./styles"
 
 // ASSETS
-import background from "./assets/background.png"
+import background from "./assets/background.jpg"
 import star from "./assets/star.png"
 import sticker from "./assets/waitlist.png"
 import icon from "./assets/waitlist_star.png";

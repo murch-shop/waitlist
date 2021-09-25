@@ -11,7 +11,15 @@ export const Section = styled.section`
     align-content: center;
 
     background: #FFFFFF;
-    padding-top: 4rem;
+    padding: 4rem 0;
+
+    @media screen and (max-width: 1024px) {
+        padding: 2rem 0;
+    }
+
+    @media screen and (max-width: 640px) {
+        padding: 2rem 1rem;
+    }
 `;
 
 export const Header = styled.div`
@@ -25,26 +33,33 @@ export const Header = styled.div`
     width: 568px; // approx. 40% of 100vw for 1440 display
 
     @media screen and (max-width: 1024px) {
+        width: 50%;
+    }
+
+    @media screen and (max-width: 768px) {
         width: 75%;
     }
 
     @media screen and (max-width: 640px) {
-        width: 85%;
+        width: 100%;
     }
 `;
 
 export const HeaderTitle = styled.div`
     position: relative;
-    padding: 1.5rem;
+    padding: 1rem 1.5rem;
 
     @media screen and (max-width: 1024px) {
         padding: 1rem;
+    }
+
+    @media screen and (max-width: 640px) {
+        padding: 0rem;
     }
 `;
 
 export const Title = styled.h1`
     position: relative;
-    padding: 1.5rem;
     text-align: center;
 
     @media screen and (max-width: 640px) {
