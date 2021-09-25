@@ -21,12 +21,14 @@ export const Container = styled.section`
     }
 
     @media only screen and (max-width: 768px) {
+        height: 85vh;
         padding: 8rem 2rem;
     }
 
     @media only screen and (max-width: 640px) {
+        height: auto;
         align-items: center;
-        padding: 2rem 1rem;
+        padding: 8rem 1rem 12rem 1rem;
     }
 `;
 

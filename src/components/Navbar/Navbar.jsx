@@ -28,6 +28,15 @@ const Container = styled.div`
     }
 `;
 
+const LogoWrap = styled.div`
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+`;
+
 const Logo = styled.img`
     image-rendering: -moz-crisp-edges;         /* Firefox */
     image-rendering:   -o-crisp-edges;         /* Opera */
@@ -35,13 +44,21 @@ const Logo = styled.img`
     image-rendering: crisp-edges;
     -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
     
-    height: auto;
+    height: 48px;
     width: auto;
+    margin-right: 0.75rem;
+`;
+
+const LogoName = styled.h1`
+    font-family: var(--fredoka-one);
 `;
 
 const Navbar = () => (
     <Container>
-        <Logo src={logo} alt="murch logo" />
+        <LogoWrap>
+            <Logo src={logo} alt="murch logo" />
+            <LogoName>murch</LogoName>
+        </LogoWrap>
         <Button link="#waitlist" label="Join the Waitlist" icon={arrow} />
     </Container>
 )
