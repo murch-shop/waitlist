@@ -29,13 +29,14 @@ const Container = styled.div`
 `;
 
 const Logo = styled.img`
-    max-height: 42px;
+    image-rendering: -moz-crisp-edges;         /* Firefox */
+    image-rendering:   -o-crisp-edges;         /* Opera */
+    image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+    
+    height: auto;
     width: auto;
-
-    @media screen and (max-width: 321px) {
-        max-height: 36px;
-        width: auto;
-    }
 `;
 
 const Navbar = () => (

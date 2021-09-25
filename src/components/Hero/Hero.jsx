@@ -12,7 +12,7 @@ import {
 import Button from "../Button";
 
 // ASSETS
-import hero from "./assets/hero.png";
+import hero from "./assets/hero.jpg";
 import arrow from "./assets/arrow.png";
 
 const Hero = () => (

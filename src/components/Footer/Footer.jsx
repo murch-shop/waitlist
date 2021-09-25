@@ -16,7 +16,7 @@ const Container = styled.footer`
 
     background: var(--muted-white);
 
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 640px) {
         padding: 2rem;
         flex-direction: column;
         justify-content: flex-start;
@@ -38,9 +38,12 @@ const Wrapper = styled.div`
         align-items: flex-end;
     }
 
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 640px) {
         width: 100%;
-        padding-bottom: 1rem;
+
+        &.left {
+            padding-bottom: 1rem;
+        }
 
         &.left, &.right {
             align-items: center;
@@ -48,16 +51,27 @@ const Wrapper = styled.div`
     }
 `;
 
-export const Copyright = styled.p`
+const Logo = styled.img`
+    image-rendering: -moz-crisp-edges;         /* Firefox */
+    image-rendering:   -o-crisp-edges;         /* Opera */
+    image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+
+    height: auto;
+    width: auto;
+`;
+
+const Copyright = styled.p`
     text-align: center;
     padding-top: 0.5rem;
 
-    // @media screen and (max-width: 400px) {
+    // @media screen and (max-width: 640px) {
     //     display: none;
     // }
 `;
 
-export const StyledLink = styled.a`
+const StyledLink = styled.a`
     text-decoration: none;
     color: var(--muted-light);
     padding: 0.25rem 0;
@@ -71,7 +85,7 @@ export const StyledLink = styled.a`
 const Footer = () => (
     <Container>
         <Wrapper className="left">
-            <img src={logo} alt="murch logo" />
+            <Logo src={logo} alt="murch logo" />
             <Copyright className="open-sans overline">Copyright © 2021 Murch, inc. All rights reserved.</Copyright>
         </Wrapper>
         <Wrapper className="right">
