@@ -37,6 +37,7 @@ export const Header = styled.div`
     }
 
     @media screen and (max-width: 640px) {
+        padding: 0 1rem;
         width: 100%;
     }
 `;
@@ -44,6 +45,12 @@ export const Header = styled.div`
 export const HeaderTitle = styled.div`
     position: relative;
     padding: 1rem 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 
     @media screen and (max-width: 1024px) {
         padding: 1rem;
@@ -55,11 +62,13 @@ export const HeaderTitle = styled.div`
 `;
 
 export const Title = styled.h1`
+    width: 90%;
     position: relative;
     text-align: center;
 
     @media screen and (max-width: 640px) {
-        padding: 1rem;
+        width: 100%;
+        padding: 2rem 0;
     }
 `;
 
@@ -68,7 +77,15 @@ export const Span = styled.span`
 `;
 
 export const Star = styled.img`
+    image-rendering: -moz-crisp-edges;         /* Firefox */
+    image-rendering:   -o-crisp-edges;         /* Opera */
+    image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+
     position: absolute;
+    width: 3rem;
+    height: auto;
 
     &.left {
         top: -16px;
@@ -83,12 +100,12 @@ export const Star = styled.img`
     @media screen and (max-width: 640px) {
         &.left {
             top: -16px;
-            left: -8px;
+            left: 0px;
         }
     
         &.right {
             bottom: 0;
-            right: -16px;
+            right: 0px;
         }
     }
 `;

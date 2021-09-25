@@ -35,8 +35,8 @@ const Waitlist = () => (
             <HeaderTitle>
                 <Star src={star} alt="Murch Star" className="left" />
                 <Title className="fredoka-one">
-                    Start your merchandise journey<br />
-                    <Span className="fredoka-one">with murch</Span>.
+                    Start your merchandise journey
+                    <Span className="fredoka-one"> with murch</Span>.
                 </Title>
                 <Star src={star} alt="Murch Star" className="right" />
             </HeaderTitle>
