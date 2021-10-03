@@ -62,7 +62,7 @@ export const HeaderTitle = styled.div`
 `;
 
 export const Title = styled.h1`
-    width: 100%;
+    width: 60%;
     position: relative;
     text-align: center;
 
@@ -89,12 +89,24 @@ export const Star = styled.img`
 
     &.left {
         top: -16px;
-        left: -64px;
+        left: -128px;
     }
 
     &.right {
-        bottom: 0;
-        right: -96px;
+        bottom: -32px;
+        right: -160px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        &.left {
+            top: -16px;
+            left: -64px;
+        }
+    
+        &.right {
+            bottom: -32px;
+            right: -80px;
+        }
     }
 
     @media screen and (max-width: 640px) {
@@ -103,8 +115,13 @@ export const Star = styled.img`
 `;
 
 export const Caption = styled.p`
+    width: 70%;
     color: var(--muted-light);
     text-align: center;
+
+    @media screen and (max-width: 640px) {
+        width: 100%;
+    }
 `;
 
 export const Container = styled.div`
@@ -130,25 +147,31 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
-    width: 75%;
+    width: 80%;
     position: relative;
     padding: 2.5rem 4rem;
 
+    @media screen and (min-width: 1920px) {
+        width: 75%;
+    }
+
+    @media screen and (max-width: 1440px) {
+        width: 90%;
+        padding: 2rem;
+    }
+
     @media screen and (max-width: 1280px) {
         width: 100%;
-        position: relative;
         padding: 2rem;
     }
 
     @media screen and (max-width: 1024px) {
         width: auto;
-        position: relative;
         padding: 4rem;
     }
 
     @media screen and (max-width: 768px) {
         width: auto;
-        position: relative;
         padding: 2rem;
     }
 

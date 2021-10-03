@@ -35,7 +35,7 @@ const Waitlist = () => (
             <HeaderTitle>
                 <Star src={star} alt="Murch Star" className="left" />
                 <Title className="fredoka-one">
-                    Are you ready to<br />
+                    Are you ready to
                     <Span className="fredoka-one"> sell your story</Span>?
                 </Title>
                 <Star src={star} alt="Murch Star" className="right" />

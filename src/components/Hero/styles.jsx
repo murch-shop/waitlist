@@ -48,10 +48,14 @@ export const Wrapper = styled.div`
 `;
 
 export const Title = styled.h1`
-    width: 100%;
+    width: 70%;
     height: auto;
     font-family: var(--fredoka-one);
     text-align: center;
+
+    @media only screen and (max-width: 640px) {
+        width: 100%;
+    }
 `;
 
 export const Span = styled.span`
@@ -60,8 +64,13 @@ export const Span = styled.span`
 `;
 
 export const Body = styled.p`
+    width: 80%;
     font-family: var(--open-sans);
     color: var(--muted-light);
     text-align: center;
     padding: 1rem 0 2rem 0;
+
+    @media only screen and (max-width: 640px) {
+        width: 100%;
+    }
 `;
