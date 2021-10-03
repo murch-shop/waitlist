@@ -223,12 +223,16 @@ export const Sticker = styled.img`
 `;
 
 export const Content = styled.div`
-    width: auto;
+    width: 45%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     align-content: center;
+
+    @media screen and (min-width: 1920px) {
+        width: 50%;
+    }
 
     @media screen and (max-width: 1024px) {
         width: 100%;
@@ -257,11 +261,17 @@ export const Body = styled.p`
 `;
 
 export const Widget = styled.div`
+    width: 55%;
     padding: 4rem 2rem;
     border-radius: 10%;
     background: #FFF;
 
+    @media screen and (min-width: 1920px) {
+        width: 50%;
+    }
+
     @media screen and (max-width: 1024px) {
+        width: 100%;
         border-radius: 5%;
     }
 

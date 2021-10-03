@@ -11,7 +11,6 @@ import {
     Span,
     Star,
     Caption,
-
     Container,
     Wrapper,
     Card,
@@ -24,6 +23,7 @@ import {
 } from "./styles"
 
 // ASSETS
+import "./waitlist.css"
 import background from "./assets/background.jpg"
 import star from "./assets/star.png"
 import sticker from "./assets/waitlist.png"
@@ -53,7 +53,7 @@ const Waitlist = () => (
                         <Body className="open-sans">By signing up, you’ll be part of an exclusive community — gaining the latest news &amp; updates on Murch, and the creator space!</Body>
                     </Content>
                     <Widget>
-                        <WaitlistApi api_key="EAYIW2" waitlist_link="https://waitlist.murch.shop/" />
+                        <WaitlistApi api_key="EAYIW2" waitlist_link="https://murch.shop/" />
                     </Widget>
                 </Card>
                 <Sticker src={sticker} alt="Murch Sticker" className="right" />
