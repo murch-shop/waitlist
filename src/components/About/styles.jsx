@@ -54,8 +54,19 @@ export const Wrapper = styled.div`
     }
 `;
 
-export const Image = styled.img`
+export const ImageWrap = styled.a`
     width: 50%;
+    height: auto;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+`;
+
+export const Image = styled.img`
+    width: 100%;
     height: auto;
     padding: 0 4rem;
 

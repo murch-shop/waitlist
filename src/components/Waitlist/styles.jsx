@@ -62,7 +62,7 @@ export const HeaderTitle = styled.div`
 `;
 
 export const Title = styled.h1`
-    width: 90%;
+    width: 100%;
     position: relative;
     text-align: center;
 
@@ -98,15 +98,7 @@ export const Star = styled.img`
     }
 
     @media screen and (max-width: 640px) {
-        &.left {
-            top: -16px;
-            left: 0px;
-        }
-    
-        &.right {
-            bottom: 0;
-            right: 0px;
-        }
+        display: none;
     }
 `;
 
@@ -233,7 +225,12 @@ export const ContentTitle = styled.h1`
 `;
 
 export const Body = styled.p`
+    width: 80%;
     color: var(--muted-white);
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+    }
 `;
 
 export const Widget = styled.div`

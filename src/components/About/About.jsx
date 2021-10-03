@@ -5,6 +5,7 @@ import React from "react";
 import {
     Container,
     Wrapper,
+    ImageWrap,
     Image,
     Content,
     Header,
@@ -22,11 +23,12 @@ import brandBg from "./assets/brandBg.png";
 // START: DATA
 const data = [
     {
-        title: "Go hands-off with inventory and logistics management",
-        body: "Automate your operations through our platform. We’ll take care of your business needs and keep you posted, while you can focus your time on what matters most—creating your content.",
+        title: "Entrust Murch with your inventory & logistics management",
+        body: "Automate your operations through our platform. We'll take care of your business needs and keep you posted, so you can focus your time on what matters to you most — creating your content.",
         image: {
             name: "Murch Logistics",
-            url: logistics
+            url: logistics,
+            link: "https://storyset.com/work"
         },
         background: {
             url: logisticsBg,
@@ -35,11 +37,12 @@ const data = [
         }
     },
     {
-        title: "Personalize your store’s space with your brand",
-        body: "Customize your business simply, easily, and quickly. We understand that merchandise, from what you sell to where and how you sell them, is an extension of your personal brand.",
+        title: "Personalize your store with your own unique brand",
+        body: "Customize your shop simply and quickly. We understand that merchandise — from what you sell to where you sell them — is an extension of your personal brand.",
         image: {
             name: "Murch Branding",
-            url: brand
+            url: brand,
+            link: "https://storyset.com/design"
         },
         background: {
             url: brandBg,
@@ -48,11 +51,12 @@ const data = [
         }
     },
     {
-        title: "Interact with and update your followers in real-time",
-        body: "Engage with your own community in the most thoughtful way. We’ve got you fully covered with  integrations of anticipated drops, polls, and other features that are just waiting to be explored.",
+        title: "Update and interact with your followers in real-time",
+        body: "Connect with your community. We've got you fully covered with features that facilitate engagement with your fans — from countdowns for your next merch drop, to polls that gauge what your fans are into, and so much more!",
         image: {
             name: "Murch Followers",
-            url: followers
+            url: followers,
+            link: "https://storyset.com/people"
         }
     }
 ]
@@ -69,7 +73,9 @@ const Layout = ({
             :
                 <></>
         }
-        <Image src={image.url} alt={image.name} />
+        <ImageWrap href={image.link} target="_blank" rel="noreferrer">
+            <Image src={image.url} alt={image.name} />
+        </ImageWrap>
         <Content>
             <Header>{title}</Header>
             <Body className="body-big">{body}</Body>
