@@ -103,6 +103,7 @@ export const ImageWrap = styled.a`
     width: 100%;
     height: auto;
     overflow: hidden;
+    position: relative;
 
     display: flex;
     justify-content: center;

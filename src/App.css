@@ -59,43 +59,16 @@ a {
 
 h1, .title {
   font-size: 1.75rem;
-}
-
-h1.fredoka-one,
-.title.fredoka-one {
-  line-height: 2.125rem;
-}
-
-h1.open-sans,
-.title.open-sans {
   line-height: 2.375rem;
 }
 
 h2, .subtitle {
   font-size: 1.5rem;
-}
-
-h2.fredoka-one,
-.subtitle.fredoka-one {
-  line-height: 1.8rem;
-}
-
-h2.open-sans,
-.subtitle.open-sans {
   line-height: 2rem;
 }
 
 h3, .body-big {
   font-size: 1.25rem;
-}
-
-h3.fredoka-one,
-.body-big.fredoka-one {
-  line-height: 1.75rem;
-}
-
-h3.open-sans,
-.body-big.open-sans {
   line-height: 1.75rem;
 }
 
