@@ -18,19 +18,36 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h1`
+    width: 25%;
     text-align: center;
     font-family: var(--fredoka-one);
-`;
+    margin-bottom: 2rem;
 
-export const Subtitle = styled.p`
-    margin: 1rem 0 2.5rem 0;
-    font-family: var(--open-sans);
-    font-weight: 700;
+    @media only screen and (max-width: 1440px) {
+        width: 30%;   
+    }
+    
+    @media only screen and (max-width: 1280px) {
+        width: 35%;   
+    }
+
+    @media only screen and (max-width: 1024px) {
+        width: 45%;   
+    }
+
+    @media only screen and (max-width: 768px) {
+        width: 60%;
+        margin-bottom: 1rem;
+    }
+
+    @media only screen and (max-width: 640px) {
+        width: 100%;
+    }
 `;
 
 export const Span = styled.span`
-    font-family: var(--open-sans);
-    font-weight: 700;
+    text-align: center;
+    font-family: var(--fredoka-one);
     color: var(--yellow-main);
 `;
 
@@ -82,7 +99,7 @@ export const StyledCard = styled.div`
     }
 `;
 
-export const ImageWrap = styled.div`
+export const ImageWrap = styled.a`
     width: 100%;
     height: auto;
     overflow: hidden;

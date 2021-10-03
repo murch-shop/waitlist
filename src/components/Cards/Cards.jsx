@@ -5,7 +5,6 @@ import React from "react";
 import {
     Container,
     Title,
-    Subtitle,
     Span,
     Wrapper,
     StyledCard,
@@ -26,27 +25,29 @@ import onboarding from "./assets/onboarding.png";
 // START: Data
 const data = [
     {
+        link: "https://storyset.com/work",
         image: community,
         title: "A growing community of content creators",
-        body: "Creators from Youtube, Twitch, Tiktok, and more have made a home for their own shops in murch."
+        body: "Join creators from Youtube, Twitch, Tiktok, & more, who are ready to make a home for their own shops in Murch."
     },
     {
+        link: "https://storyset.com/design",
         image: support,
         title: "Premium support",
         body: "Our full-service customer support will assist you with anything at any time. Don’t hesitate to reach out!"
     },
     {
+        link: "https://storyset.com/people",
         image: onboarding,
         title: "Zero onboarding fees",
-        body: "We won’t charge you for upfront or hidden fees, ever. We only earn when you earn, and it’s as simple as that."
+        body: "We won’t charge you for upfront or hidden fees. We only earn when you earn, and it’s as simple as that."
     }
 ]
-
 // END: Data
 
-const Card = ({ image, title, body }) => (
+const Card = ({ link, image, title, body }) => (
     <StyledCard>
-        <ImageWrap>
+        <ImageWrap href={link} target="_blank" rel="noreferrer">
             <Image src={image} alt={title} />
         </ImageWrap>
         <Header>{title}</Header>
@@ -57,11 +58,10 @@ const Card = ({ image, title, body }) => (
 const Cards = () => (
     <Container>
         <Sticker src={upSticker} className="top" />
-        <Title>What are you waiting for?</Title>
-        <Subtitle><Span>Sell your story</Span> with murch.</Subtitle>
+        <Title>Start your merchandise journey<Span> with Murch</Span>.</Title>
         <Wrapper>
             {data.map((el) => (
-                <Card image={el.image} title={el.title} body={el.body} />  
+                <Card link={el.link} image={el.image} title={el.title} body={el.body} />  
             ))}
         </Wrapper>
         <Sticker src={downSticker} className="bottom" />

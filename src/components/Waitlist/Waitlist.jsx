@@ -35,12 +35,12 @@ const Waitlist = () => (
             <HeaderTitle>
                 <Star src={star} alt="Murch Star" className="left" />
                 <Title className="fredoka-one">
-                    Start your merchandise journey
-                    <Span className="fredoka-one"> with murch</Span>.
+                    Are you ready to<br />
+                    <Span className="fredoka-one"> sell your story</Span>?
                 </Title>
                 <Star src={star} alt="Murch Star" className="right" />
             </HeaderTitle>
-            <Caption>We’ll hop you right onboard once ready, referring to your fellow creators will bump you further up the list!</Caption>
+            <Caption>Join our waitlist and be one of the first to try Murch when we launch in private beta.</Caption>
         </Header>
 
         <Container style={{ backgroundImage: `url(${background})` }}>
@@ -49,8 +49,8 @@ const Waitlist = () => (
                 <Card>
                     <Content>
                         <Icon src={icon} alt="Star" />
-                        <ContentTitle className="fredoka-one">Join the Waitlist</ContentTitle>
-                        <Body className="open-sans">Get exclusive access to...</Body>
+                        <ContentTitle className="fredoka-one">Get Early Access</ContentTitle>
+                        <Body className="open-sans">By signing up, you’ll be part of an exclusive community — gaining the latest news &amp; updates on Murch, and the creator space!</Body>
                     </Content>
                     <Widget>
                         <WaitlistApi api_key="EAYIW2" waitlist_link="https://waitlist.murch.shop/" />
