@@ -53,7 +53,7 @@ const Waitlist = () => (
                         <Body className="open-sans">By signing up, you’ll be part of an exclusive community — gaining the latest news &amp; updates on Murch, and the creator space!</Body>
                     </Content>
                     <Widget>
-                        <WaitlistApi api_key="EAYIW2" waitlist_link="https://murch.shop/" />
+                        <WaitlistApi api_key="EAYIW2" waitlist_link="https://murch.shop/" joinWaitlistHeading="Hey, you!" joinWaitlistButton="Join the waitlist!" />
                     </Widget>
                 </Card>
                 <Sticker src={sticker} alt="Murch Sticker" className="right" />
