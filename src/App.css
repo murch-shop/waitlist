@@ -94,3 +94,11 @@ p, .body {
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
+
+.social-link {
+  transition: fill 0.3s ease-in-out;
+}
+
+.social-link:hover {
+  fill: var(--yellow-main);
+}

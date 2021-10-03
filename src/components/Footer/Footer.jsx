@@ -2,7 +2,11 @@ import React from "react";
 // import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-import logo from "./assets/logo.png"
+import logo from "./assets/logo.png";
+import fb from "./assets/fb.png";
+import ig from "./assets/ig.png";
+import twitter from "./assets/twitter.png";
+import linkedin from "./assets/linkedin.png";
 
 const Container = styled.footer`
     width: 100%;
@@ -85,6 +89,48 @@ const Copyright = styled.p`
     // }
 `;
 
+const Socials = styled.div`
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+
+    @media screen and (max-width: 768px) {
+        justify-content: center;
+    }
+`;
+
+const Social = styled.img`
+    width: auto;
+    height: auto;
+    cursor: pointer;
+
+    -webkit-backface-visibility: hidden;
+    -ms-transform: translateZ(0); /* IE 9 */
+    -webkit-transform: translateZ(0); /* Chrome, Safari, Opera */
+    transform: translateZ(0);
+
+    image-rendering: -moz-crisp-edges;         /* Firefox */
+    image-rendering:   -o-crisp-edges;         /* Opera */
+    image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+
+    margin-left: 2rem;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+        transform: translateY(-10%);
+    }
+
+    @media screen and (max-width: 768px) {
+        margin: 0 0.5rem;
+    }
+`;
+
 const StyledLink = styled.a`
     text-decoration: none;
     color: var(--muted-light);
@@ -96,6 +142,29 @@ const StyledLink = styled.a`
     }
 `;
 
+const socials = [
+    {
+        icon: fb,
+        alt: "Facebook",
+        url: "https://www.facebook.com/murchshop/"
+    },
+    {
+        icon: ig,
+        alt: "Instagram",
+        url: "https://www.instagram.com/murchshop_/"
+    },
+    {
+        icon: twitter,
+        alt: "Twitter",
+        url: "https://www.twitter.com/murchshop/"
+    },
+    {
+        icon: linkedin,
+        alt: "LinkedIn",
+        url: "https://www.linkedin.com/company/murchshop/"
+    },
+]
+
 const Footer = () => (
     <Container>
         <Wrapper className="left">
@@ -106,10 +175,14 @@ const Footer = () => (
             <Copyright className="open-sans overline">Copyright © 2021 Murch, inc. All rights reserved.</Copyright>
         </Wrapper>
         <Wrapper className="right">
-            <StyledLink href="" className="open-sans caption">Facebook</StyledLink>
-            <StyledLink href="" className="open-sans caption">Instagram</StyledLink>
-            <StyledLink href="" className="open-sans caption">LinkedIn</StyledLink>
-            <StyledLink href="" className="open-sans caption">murch.info@gmail.com</StyledLink>
+            <Socials>
+                {socials.map((social) => (
+                    <StyledLink href={social.url} target="_blank" rel="noreferrer">
+                        <Social src={social.icon} alt={social.alt} />
+                    </StyledLink>
+                ))}
+            </Socials>
+            <StyledLink href="mailto:murch.info@gmail.com" className="open-sans caption">murch.info@gmail.com</StyledLink>
         </Wrapper>
     </Container>
 )

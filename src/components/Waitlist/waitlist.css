@@ -1,0 +1,23 @@
+h1 {
+    font-family: var(--fredoka-one);
+    color: #141414;
+}
+.container--waitlistapi {
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+.button--waitlistapi {
+    font-family: var(--fredoka-one);
+    background-color: #141414;
+}
+
+.statusTextContainer--waitlistapi {
+    font-family: var(--open-sans);
+    color: #141414;
+}
+
+.referralLinkField--text {
+    font-family: var(--open-sans);
+    color: #141414;
+}
