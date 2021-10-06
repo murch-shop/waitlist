@@ -279,3 +279,170 @@ export const Widget = styled.div`
         padding: 2rem 1rem;
     }
 `;
+
+export const Form = styled.form`
+    width: 100%;
+    border-radius: 10%;
+    background: #FFF;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+`;
+
+export const FormTitle = styled.h1`
+    padding: 1rem 0;
+    color: var(--muted-dark);
+`;
+
+export const FormRow = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: center;
+    margin: 0.25rem 0;
+
+    &.buttons {
+        margin: 1.5rem 0 0.5rem 0;
+    }
+
+`;
+
+export const FieldWrap = styled.div`
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+
+    &.row {
+        width: 48%;
+    }
+`;
+    
+export const Field = styled.input`
+    width: 100%;
+    height: auto;
+    background: var(--muted-white);
+    padding: 0.5rem 1rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.3s ease-in-out;
+
+    font-family: var(--open-sans);
+    font-size: 1rem;
+    color: var(--muted-dark);
+
+    &:focus {
+        border: 1px solid var(--yellow-main);
+    }
+
+    // Chrome, Firefox, Opera, Safari 10.1+
+    &::placeholder {
+        font-size: 0.875rem;
+        color: var(--muted-light);
+    }
+      
+    // Internet Explorer 10-11
+    &:-ms-input-placeholder {
+        font-size: 0.875rem;
+        color: var(--muted-light);
+    }
+      
+    // Microsoft Edge
+    &::-ms-input-placeholder {
+        font-size: 0.875rem;
+        color: var(--muted-light);
+    }
+`;
+
+export const Error = styled.p`
+    color: var(--indicator-red);
+    margin-bottom: 0.5rem;
+`;
+
+export const Status = styled.div`
+    width: 100%;
+    border-radius: 10%;
+    background: #FFF;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+`;
+
+export const StatusTitle = styled.h1`
+    color: var(--muted-dark);
+    padding: 1rem 0;
+    text-align: center;
+`;
+
+export const StatusRow = styled.div`
+    width: 100%;
+    height: auto;
+    margin: 1rem 0 2rem 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+
+    @media only screen and (max-width: 640px) {
+        flex-direction: column;
+        justify-content: center;
+    }
+`;
+
+export const StatusContent = styled.div`
+    width: 47.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    @media only screen and (max-width: 640px) {
+        width: 100%;
+        margin: 1rem 0;
+    }
+`;
+
+export const StatusSubtitle = styled.p`
+    font-family: var(--open-sans);
+    font-size: 1rem;
+    color: var(--muted-light);
+    text-align: center;
+    padding-bottom: 0.5rem;
+`;
+
+export const StatusStats = styled.p`
+    font-family: var(--open-sans);
+    font-size: 1.5rem;
+    color: var(--muted-dark);
+    text-align: center;
+`;
+
+export const ReferralLink = styled.div`
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    background: var(--muted-white);
+    box-shadow: var(--normal-drop-shadow);
+
+    font-family: var(--open-sans);
+    font-size: 1rem;
+    color: var(--muted-light);
+    
+    @media only screen and (max-width: 640px) {
+        text-align: center;
+    }
+`;
