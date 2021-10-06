@@ -5,7 +5,7 @@ axios.defaults.xsrfHeaderName = "X-CSRFToken"
 axios.defaults.xsrfCookieName = "csrftoken"
 
 const apiClient = axios.create({
-  baseURL: process.env.API_URL || "https://murch-waitlist.herokuapp.com/",
+  baseURL: process.env.API_URL || "https://murch-waitlist.herokuapp.com",
   withCredentials: true,
 })
 
