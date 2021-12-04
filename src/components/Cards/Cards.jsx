@@ -28,8 +28,8 @@ const data = [
         link: "https://unsplash.com/@jmuniz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
         credits: `<p>Unsplash (1) Photo by <a href="https://unsplash.com/@jmuniz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Joel Muniz</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>`,
         image: community,
-        title: "A growing community of content creators",
-        body: "Join creators from Youtube, Twitch, Tiktok, & more, who are ready to make a home for their own shops in Murch."
+        title: "A growing family of passionate people",
+        body: "Join communities from all sorts of backgrounds and missions and watch how they grow what they believe in."
     },
     {
         link: "https://unsplash.com/@johnschno?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
@@ -48,10 +48,10 @@ const data = [
 ]
 // END: Data
 
-const Card = ({ link, image, title, body }) => (
+const Card = ({ link, image, credits, title, body }) => (
     <StyledCard>
-        <ImageWrap href={link} target="_blank" rel="noreferrer">
-            <Image src={image} alt={title} />
+        <ImageWrap>
+            <Image src={image} alt={credits} />
         </ImageWrap>
         <Header>{title}</Header>
         <Body>{body}</Body>
@@ -64,7 +64,7 @@ const Cards = () => (
         <Title>Start your merchandise journey<Span> with Murch</Span>.</Title>
         <Wrapper>
             {data.map((el) => (
-                <Card link={el.link} image={el.image} title={el.title} body={el.body} />  
+                <Card link={el.link} image={el.image} credits={el.credits} title={el.title} body={el.body} />  
             ))}
         </Wrapper>
         <Sticker src={downSticker} className="bottom" />
