@@ -55,7 +55,8 @@ const WaitlistInitial = {
     firstName: '', 
     lastName: '', 
     email: '', 
-    url: ''
+    url: '',
+    position: ''
 }
 
 const StatusInitial = {
@@ -68,6 +69,7 @@ const WaitlistSchema = Yup.object().shape({
     lastName: Yup.string().required('This field is required'),
     email: Yup.string().email('Invalid email').required('This field is required'),
     url: Yup.string().required('This field is required'),
+    position: Yup.string().required('This field is required'),
     referralLink: Yup.string()
 })
 
@@ -210,6 +212,7 @@ const FormWidget = () => {
                                             lastName: values.lastName,
                                             email: values.email,
                                             url: values.url,
+                                            position: values.position,
                                             referralLink: document.URL
                                         }).then(res => {
                                             // Change User Status Data
@@ -274,11 +277,24 @@ const FormWidget = () => {
                                                 <Field 
                                                     name={`url`} 
                                                     value={values[`url`]} 
-                                                    placeholder="Content Creator Page URL" 
+                                                    placeholder="Community Page URL (any social media)" 
                                                     onChange={e => setFieldValue('url', e.target.value)}
                                                 />
                                                 {errors.url && touched.url ?
                                                     <Error>{errors.url}</Error>        
+                                                : null}
+                                            </FieldWrap>
+                                        </FormRow>
+                                        <FormRow>
+                                            <FieldWrap>
+                                                <Field 
+                                                    name={`position`} 
+                                                    value={values[`position`]} 
+                                                    placeholder="Contact Person Position" 
+                                                    onChange={e => setFieldValue('position', e.target.value)}
+                                                />
+                                                {errors.position && touched.position ?
+                                                    <Error>{errors.position}</Error>        
                                                 : null}
                                             </FieldWrap>
                                         </FormRow>
@@ -318,8 +334,8 @@ const Waitlist = () => (
                 <Card>
                     <Content>
                         <Icon src={icon} alt="Star" />
-                        <ContentTitle className="fredoka-one">Get Early Access</ContentTitle>
-                        <Body className="open-sans">By signing up, you’ll be part of an exclusive community — gaining the latest news &amp; updates on Murch, and the creator space!</Body>
+                        <ContentTitle className="fredoka-one">Get early access</ContentTitle>
+                        <Body className="open-sans">By signing up, you’ll be part of an exclusive community — gaining the latest news &amp; updates on Murch, and our partners!</Body>
                     </Content>
 
                     <FormWidget />

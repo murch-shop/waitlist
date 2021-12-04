@@ -23,22 +23,8 @@ import brandBg from "./assets/brandBg.png";
 // START: DATA
 const data = [
     {
-        title: "Entrust Murch with your inventory & logistics management",
-        body: "Automate your operations through our platform. We'll take care of your business needs and keep you posted, so you can focus your time on what matters to you most — creating your content.",
-        image: {
-            name: "Murch Logistics",
-            url: logistics,
-            link: "https://storyset.com/work"
-        },
-        background: {
-            url: logisticsBg,
-            className: "logistics__bg",
-            alt: "Murch Stickers"
-        }
-    },
-    {
-        title: "Personalize your store with your own unique brand",
-        body: "Customize your shop simply and quickly. We understand that merchandise — from what you sell to where you sell them — is an extension of your personal brand.",
+        title: "Personalize your store with your own brand",
+        body: "Customize your shop simply and quickly. We understand that merchandise — from what you sell to where you sell them — is an extension of your unique brand.",
         image: {
             name: "Murch Branding",
             url: brand,
@@ -51,8 +37,22 @@ const data = [
         }
     },
     {
-        title: "Update and interact with your followers in real-time",
-        body: "Connect with your community. We've got you fully covered with features that facilitate engagement with your fans — from countdowns for your next merch drop, to polls that gauge what your fans are into, and so much more!",
+        title: "Entrust Murch with your order fulfillment and shipping",
+        body: "Automate your operations through our platform. We'll take care of your business needs and keep you posted, so you can focus your time on what matters to you most — your community.",
+        image: {
+            name: "Murch Logistics",
+            url: logistics,
+            link: "https://storyset.com/work"
+        },
+        background: {
+            url: logisticsBg,
+            className: "logistics__bg",
+            alt: "Murch Stickers"
+        }
+    },
+    {
+        title: "Merchandise you can call your own, made with us",
+        body: "Murch Studio will work with you to design, test, and produce the goods that will reflect your brand the best possible way, and your community members will surely love. Coming Soon!",
         image: {
             name: "Murch Followers",
             url: followers,
